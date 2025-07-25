@@ -19,10 +19,6 @@ function App() {
     closeModal();
   };
 
-  // const ModalContent = () => (
-  //   <ModalTextareaContent text={textareaValue} setText={setTextareaValue} />
-  // );
-
   return (
     <div style={{ padding: "20px" }}>
       <button onClick={openModal}>Show Modal</button>
