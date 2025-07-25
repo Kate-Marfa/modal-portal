@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-export function Modal({
+export default function Modal({
   isOpen,
   closeModalWindow,
   submitModalWindow,
   Title,
-  Content,
+  children,
 }) {
   if (!isOpen) return null;
 
@@ -15,7 +15,7 @@ export function Modal({
       <div className="modal-content">
         <h2>{Title}</h2>
         <div className="modal-body">
-          <Content />
+          {children}
         </div>
         <div className="modal-actions">
           <button onClick={closeModalWindow}>Close</button>
